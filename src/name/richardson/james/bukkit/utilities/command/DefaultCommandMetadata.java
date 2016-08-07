@@ -16,7 +16,7 @@ public final class DefaultCommandMetadata implements CommandMetadata {
 
 	private final Localisation localisation;
 
-	public DefaultCommandMetadata(Class classz) {
+	public DefaultCommandMetadata(@SuppressWarnings("rawtypes") Class classz) {
 		Validate.notNull(classz, "You have no class! Haha");
 		this.localisation = new ResourceBundleByClassLocalisation(classz);
 	}

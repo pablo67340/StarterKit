@@ -37,6 +37,7 @@ public abstract class AbstractTimeFormatter implements TimeFormatter {
 	 * This is a dummy method to force Maven to include the resources required by PrettyTime.
 	 * It serves no other purpose.
 	 */
+	@SuppressWarnings("unused")
 	private static final void getResources() {
 		new Resources_en();
 		new Resources_fr();

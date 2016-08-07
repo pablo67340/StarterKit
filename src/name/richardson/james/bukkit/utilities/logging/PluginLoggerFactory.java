@@ -29,6 +29,7 @@ import name.richardson.james.bukkit.utilities.localisation.ResourceBundleByClass
  */
 public final class PluginLoggerFactory {
 
+	@SuppressWarnings({ "unused", "rawtypes" })
 	public final static Logger getLogger(Class classz) {
 		final String name = classz.getPackage().getName();
 		final java.util.logging.Logger logger = LogManager.getLogManager().getLogger(name);

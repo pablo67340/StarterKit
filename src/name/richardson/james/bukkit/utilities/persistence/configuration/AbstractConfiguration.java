@@ -53,6 +53,7 @@ public abstract class AbstractConfiguration {
 	 * @param useRuntimeDefaults {@code true} if the defaults should be applied if the value is missing in the configuration; {@code false} otherwise.
 	 * @throws IOException
 	 */
+	@SuppressWarnings("deprecation")
 	public AbstractConfiguration(final File file, final InputStream defaults, boolean useRuntimeDefaults)
 	throws IOException {
 		Validate.notNull(file, "File can not be null!");

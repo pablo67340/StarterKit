@@ -21,6 +21,7 @@ public abstract class AbstractCommand implements Command {
 		this.matchers.add(matcher);
 	}
 
+	@SuppressWarnings("unchecked")
 	public final Set<String> getArgumentMatches(CommandContext commandContext) {
 		int lastArgumentIndex = commandContext.size() - 1;
 		if (commandContext.size() < lastArgumentIndex || commandContext.size() == 0) return Collections.EMPTY_SET;

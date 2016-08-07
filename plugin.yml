@@ -3,7 +3,7 @@ main: name.richardson.james.bukkit.starterkit.StarterKit
 author: grandwazir, pablo67340
 description: Give items to new players.
 website: https://github.com/pablo67340/StarterKit
-version: 1.3.8
+version: 1.3.9
 commands:
   sk:
     description: 'StarterKit root command'

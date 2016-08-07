@@ -19,12 +19,12 @@ public final class ResourceBundleByClassLocalisation implements Localisation {
 	 *
 	 * @param classz the class to generate the resource bundle path from.
 	 */
-	public ResourceBundleByClassLocalisation(Class classz) {
+	public ResourceBundleByClassLocalisation(@SuppressWarnings("rawtypes") Class classz) {
 		Validate.notNull(classz, "Class can not be null!");
 		this.localisation = new ResourceBundleLocalisation(getResourceBundleName(classz));
 	}
 
-	public static final String getResourceBundleName(Class classz) {
+	public static final String getResourceBundleName(@SuppressWarnings("rawtypes") Class classz) {
 		return PATH_PREFIX + classz.getSimpleName();
 	}
 

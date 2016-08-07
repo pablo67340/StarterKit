@@ -40,6 +40,7 @@ public abstract class AbstractDatabaseLoader implements DatabaseLoader {
 
 	private final ClassLoader classLoader;
 	private final List<Class<?>> classes;
+	@SuppressWarnings("unused")
 	private final DataSourceConfig datasourceConfig;
 	private final Localisation localisation = new ResourceBundleByClassLocalisation(AbstractDatabaseLoader.class);
 	private final Logger logger = PluginLoggerFactory.getLogger(AbstractDatabaseLoader.class);
